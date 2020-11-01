@@ -1,0 +1,113 @@
+/*here is mainly the styles of the workspace of the site*/
+.deit-maker {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+.goal-container {
+  text-align: center;
+}
+.goal {
+  font-size: 3rem;
+  color: #8db596;
+  margin: 20px;
+}
+/*here are the meals styles and the items styles for the site */
+.workspace {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+#meals {
+  display: flex;
+  flex: 3;
+  flex-wrap: wrap;
+  padding: 0 0 10px 10px;
+}
+
+#items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.meal-container {
+  width: 47%;
+  min-height: 50vh !important;
+  max-height: 50vh !important;
+  padding: 0 10px 0 10px;
+}
+.category-container {
+  width: 100%;
+  height: 40%;
+}
+.meal {
+  background-color: white;
+  box-shadow: 0px 0px 20px rgb(133, 132, 132, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  display: flex;
+  padding: 2px;
+}
+.category {
+  background-color: white;
+  box-shadow: 0px 0px 20px rgb(133, 132, 132, 0.1);
+  border-radius: 8px;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  justify-content: center;
+  align-content: flex-start;
+}
+.meal-name {
+  color: #8db596;
+  font-weight: 400;
+}
+.category-name {
+  color: #8db596;
+  font-weight: 400;
+}
+.item {
+  width: 90%;
+  background-color: #8db596;
+  color: rgb(255, 255, 255);
+  height: 12%;
+  border-radius: 2px;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  justify-content: space-around;
+}
+.item-input {
+  width: 20%;
+
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(160, 159, 159, 0.514);
+}
+.add-container {
+  position: relative;
+}
+.add-meal {
+  position: absolute;
+  bottom: 10%;
+  padding: 10px 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: #8db596;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.add-meal:hover {
+  background-color: #8db596bd;
+}

@@ -1,0 +1,149 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 713.91 510.82">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <title>احا</title>
+  <g id="ورك">
+    <path class="cls-1" d="M93.77,293.89a13.37,13.37,0,0,1-2.46-3.34c-2.84-5.23-5.39-16.53,9.8-33.18,15.68-17.2,19.83-13.09,32.55-3.61,13,9.73-1,25.55-1.5,26-3,3-15.44,15.9-24.58,16.73C97.16,297.46,93.77,293.89,93.77,293.89Z" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-1" d="M77.27,310.09s-2.08,7.94,5.53,6,3.34-9.53,3.34-9.53l8.52-10.75-4.55-5.54-9.27,9.6s-6.22-3.06-8.76,1.59S73,310.43,77.27,310.09Z" transform="translate(-62.31 -14.06)"/>
+    <circle cx="53.48" cy="242.1" r="3.34"/>
+    <circle cx="60.58" cy="241.65" r="1.95"/>
+  </g>
+  <g id="شيش">
+    <circle class="cls-2" cx="31.19" cy="482.67" r="5.97"/>
+    <circle class="cls-2" cx="40.38" cy="472.74" r="5.97"/>
+    <circle class="cls-2" cx="49.39" cy="462.26" r="5.97"/>
+    <circle class="cls-2" cx="58.67" cy="452.52" r="5.97"/>
+    <line class="cls-3" x1="25.76" y1="488.34" x2="15.9" y2="498.2"/>
+    <line class="cls-3" x1="69.33" y1="441.5" x2="63.41" y2="447.51"/>
+    <path class="cls-3" d="M100,507.61a7.88,7.88,0,0,1,11.14,11.14Z" transform="translate(-62.31 -14.06)"/>
+    <line class="cls-3" x1="48.71" y1="493.62" x2="52.74" y2="489.6"/>
+    <line class="cls-3" x1="60.24" y1="482.1" x2="64.26" y2="478.07"/>
+    <rect class="cls-3" x="112.4" y="495.29" width="13.65" height="8.39" transform="translate(-211.97 922.91) rotate(-135)"/>
+    <path class="cls-3" d="M121.76,485.8A7.88,7.88,0,0,1,132.9,497Z" transform="translate(-62.31 -14.06)"/>
+    <line class="cls-3" x1="70.52" y1="471.82" x2="74.54" y2="467.79"/>
+    <line class="cls-3" x1="33.08" y1="509.32" x2="42.03" y2="500.37"/>
+    <line class="cls-3" x1="82.14" y1="460.26" x2="88.41" y2="453.98"/>
+    <rect class="cls-3" x="133.8" y="473.89" width="13.65" height="8.39" transform="translate(-160.31 901.52) rotate(-135)"/>
+  </g>
+  <g id="بيتزا">
+    <path class="cls-2" d="M696.44,300.86l27-66.21,26.28,66.21h0a78.28,78.28,0,0,1-52.87.07Z" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-2" d="M735.13,305.49" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-2" d="M700.29,291.42h0a64.42,64.42,0,0,0,45.62.11l.4-.11" transform="translate(-62.31 -14.06)"/>
+    <circle class="cls-2" cx="658.56" cy="240.24" r="4.4"/>
+    <circle class="cls-2" cx="667.12" cy="249.07" r="4.4"/>
+    <circle class="cls-2" cx="660.99" cy="261.51" r="4.4"/>
+    <circle class="cls-2" cx="672.39" cy="274.99" r="4.4"/>
+    <circle class="cls-2" cx="648.21" cy="265.46" r="4.4"/>
+    <circle cx="656.19" cy="251.97" r="2.04"/>
+    <circle cx="671.52" cy="263.1" r="2.04"/>
+    <circle cx="660.99" cy="273.88" r="2.04"/>
+    <circle cx="651.75" cy="274.99" r="2.04"/>
+  </g>
+  <g id="بيتزا-2" data-name="بيتزا">
+    <path class="cls-2" d="M531.17,128.27l27-66.21,26.27,66.21h0a78.34,78.34,0,0,1-52.87.08Z" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-2" d="M569.86,132.9" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-2" d="M535,118.83h0a64.42,64.42,0,0,0,45.62.11l.41-.11" transform="translate(-62.31 -14.06)"/>
+    <circle class="cls-2" cx="493.29" cy="67.66" r="4.4"/>
+    <circle class="cls-2" cx="501.85" cy="76.48" r="4.4"/>
+    <circle class="cls-2" cx="495.73" cy="88.92" r="4.4"/>
+    <circle class="cls-2" cx="507.12" cy="102.4" r="4.4"/>
+    <circle class="cls-2" cx="482.94" cy="92.87" r="4.4"/>
+    <circle cx="490.92" cy="79.38" r="2.04"/>
+    <circle cx="506.25" cy="90.51" r="2.04"/>
+    <circle cx="495.73" cy="101.29" r="2.04"/>
+    <circle cx="486.48" cy="102.4" r="2.04"/>
+  </g>
+  <g id="بيتزا-3" data-name="بيتزا">
+    <path class="cls-2" d="M313,494.55l27-66.21,26.28,66.21h0a78.34,78.34,0,0,1-52.87.07Z" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-2" d="M351.69,499.18" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-2" d="M316.86,485.11h0a64.42,64.42,0,0,0,45.62.11l.4-.11" transform="translate(-62.31 -14.06)"/>
+    <circle class="cls-2" cx="275.13" cy="433.93" r="4.4"/>
+    <circle class="cls-2" cx="283.69" cy="442.76" r="4.4"/>
+    <circle class="cls-2" cx="277.56" cy="455.19" r="4.4"/>
+    <circle class="cls-2" cx="288.95" cy="468.68" r="4.4"/>
+    <circle class="cls-2" cx="264.77" cy="459.15" r="4.4"/>
+    <circle cx="272.76" cy="445.66" r="2.04"/>
+    <circle cx="288.09" cy="456.78" r="2.04"/>
+    <circle cx="277.56" cy="467.57" r="2.04"/>
+    <circle cx="268.32" cy="468.68" r="2.04"/>
+  </g>
+  <g id="بيتزا-4" data-name="بيتزا">
+    <path class="cls-2" d="M64.4,100l27-66.21L117.7,100h0a78.37,78.37,0,0,1-52.88.08Z" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-2" d="M103.09,104.59" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-2" d="M68.26,90.52h0a64.42,64.42,0,0,0,45.62.11l.4-.11" transform="translate(-62.31 -14.06)"/>
+    <circle class="cls-2" cx="26.52" cy="39.35" r="4.4"/>
+    <circle class="cls-2" cx="35.08" cy="48.17" r="4.4"/>
+    <circle class="cls-2" cx="28.96" cy="60.61" r="4.4"/>
+    <circle class="cls-2" cx="40.35" cy="74.09" r="4.4"/>
+    <circle class="cls-2" cx="16.17" cy="64.56" r="4.4"/>
+    <circle cx="24.15" cy="51.07" r="2.04"/>
+    <circle cx="39.49" cy="62.2" r="2.04"/>
+    <circle cx="28.96" cy="72.98" r="2.04"/>
+    <circle cx="19.71" cy="74.09" r="2.04"/>
+  </g>
+  <g id="ورك-2" data-name="ورك">
+    <path class="cls-1" d="M324.77,183.89a13.37,13.37,0,0,1-2.46-3.34c-2.84-5.23-5.39-16.53,9.8-33.18,15.68-17.2,19.83-13.09,32.55-3.61,13,9.73-1,25.55-1.5,26-3.05,3-15.44,15.9-24.58,16.73C328.16,187.46,324.77,183.89,324.77,183.89Z" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-1" d="M308.27,200.09s-2.08,7.94,5.53,6,3.34-9.53,3.34-9.53l8.52-10.75-4.55-5.54-9.27,9.6s-6.22-3.06-8.76,1.59S304,200.43,308.27,200.09Z" transform="translate(-62.31 -14.06)"/>
+    <circle cx="284.48" cy="132.1" r="3.34"/>
+    <circle cx="291.58" cy="131.65" r="1.95"/>
+  </g>
+  <g id="ورك-3" data-name="ورك">
+    <path class="cls-1" d="M704.77,463.89a13.37,13.37,0,0,1-2.46-3.34c-2.84-5.23-5.39-16.53,9.8-33.18,15.68-17.2,19.83-13.09,32.55-3.61,13,9.73-1,25.55-1.5,26-3,3-15.44,15.9-24.58,16.73C708.16,467.46,704.77,463.89,704.77,463.89Z" transform="translate(-62.31 -14.06)"/>
+    <path class="cls-1" d="M688.27,480.09s-2.08,7.94,5.53,6,3.34-9.53,3.34-9.53l8.52-10.75-4.55-5.54-9.27,9.6s-6.22-3.06-8.76,1.59S684,480.43,688.27,480.09Z" transform="translate(-62.31 -14.06)"/>
+    <circle cx="664.48" cy="412.1" r="3.34"/>
+    <circle cx="671.58" cy="411.65" r="1.95"/>
+  </g>
+  <g id="شيش-2" data-name="شيش">
+    <circle class="cls-2" cx="655.19" cy="42.67" r="5.97"/>
+    <circle class="cls-2" cx="664.38" cy="32.74" r="5.97"/>
+    <circle class="cls-2" cx="673.39" cy="22.26" r="5.97"/>
+    <circle class="cls-2" cx="682.67" cy="12.52" r="5.97"/>
+    <line class="cls-3" x1="649.76" y1="48.34" x2="639.9" y2="58.2"/>
+    <line class="cls-3" x1="693.33" y1="1.5" x2="687.41" y2="7.51"/>
+    <path class="cls-3" d="M724,67.61A7.88,7.88,0,0,1,735.1,78.75Z" transform="translate(-62.31 -14.06)"/>
+    <line class="cls-3" x1="672.71" y1="53.62" x2="676.74" y2="49.6"/>
+    <line class="cls-3" x1="684.24" y1="42.1" x2="688.26" y2="38.07"/>
+    <rect class="cls-3" x="736.4" y="55.29" width="13.65" height="8.39" transform="translate(1164.4 613.02) rotate(-135)"/>
+    <path class="cls-3" d="M745.76,45.8A7.88,7.88,0,0,1,756.9,57Z" transform="translate(-62.31 -14.06)"/>
+    <line class="cls-3" x1="694.52" y1="31.82" x2="698.54" y2="27.79"/>
+    <line class="cls-3" x1="657.08" y1="69.32" x2="666.03" y2="60.37"/>
+    <line class="cls-3" x1="706.14" y1="20.26" x2="712.41" y2="13.98"/>
+    <rect class="cls-3" x="757.8" y="33.89" width="13.65" height="8.39" transform="translate(1216.05 591.63) rotate(-135)"/>
+  </g>
+  <g id="شيش-3" data-name="شيش">
+    <circle class="cls-2" cx="385.19" cy="302.67" r="5.97"/>
+    <circle class="cls-2" cx="394.38" cy="292.74" r="5.97"/>
+    <circle class="cls-2" cx="403.39" cy="282.26" r="5.97"/>
+    <circle class="cls-2" cx="412.67" cy="272.52" r="5.97"/>
+    <line class="cls-3" x1="379.76" y1="308.34" x2="369.9" y2="318.2"/>
+    <line class="cls-3" x1="423.33" y1="261.5" x2="417.41" y2="267.51"/>
+    <path class="cls-3" d="M454,327.61a7.88,7.88,0,0,1,11.14,11.14Z" transform="translate(-62.31 -14.06)"/>
+    <line class="cls-3" x1="402.71" y1="313.62" x2="406.74" y2="309.6"/>
+    <line class="cls-3" x1="414.24" y1="302.1" x2="418.26" y2="298.07"/>
+    <rect class="cls-3" x="466.4" y="315.29" width="13.65" height="8.39" transform="translate(519.63 865.95) rotate(-135)"/>
+    <path class="cls-3" d="M475.76,305.8A7.88,7.88,0,0,1,486.9,317Z" transform="translate(-62.31 -14.06)"/>
+    <line class="cls-3" x1="424.52" y1="291.82" x2="428.54" y2="287.79"/>
+    <line class="cls-3" x1="387.08" y1="329.32" x2="396.03" y2="320.37"/>
+    <line class="cls-3" x1="436.14" y1="280.26" x2="442.41" y2="273.98"/>
+    <rect class="cls-3" x="487.8" y="293.89" width="13.65" height="8.39" transform="translate(571.29 844.55) rotate(-135)"/>
+  </g>
+</svg>
