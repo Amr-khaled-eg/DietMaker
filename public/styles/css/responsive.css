@@ -1,0 +1,20 @@
+/*here is the code responsple for the site to be responsive*/
+@media (max-width: 779px) {
+  #meals {
+    flex-direction: column;
+    flex: 2.5;
+    justify-content: center;
+    align-items: center;
+  }
+  .meal-container {
+    width: 100%;
+  }
+  #items {
+    flex: 2.5;
+    padding: 0;
+  }
+
+  .category-container {
+    width: 100%;
+  }
+}
