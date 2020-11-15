@@ -1,0 +1,161 @@
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #f1f1f1;
+  padding: 3rem 0 0.5rem;
+}
+.calculator {
+  width: 85%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px #8db59679, 0px 0px 20px rgba(163, 163, 163, 0.1),
+    0px 0px 50px #8db59648;
+}
+
+.calc-item-container {
+  width: 48%;
+  height: auto;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.calc-item {
+  height: 30vh;
+  width: 85%;
+  border: 0.8px solid silver;
+  border-radius: 5px;
+}
+.info {
+  height: 70vh;
+}
+.calc-item legend {
+  color: #94b4a4;
+  font-size: 1.8rem;
+  font-weight: 100;
+  padding: 0 10px;
+}
+.description {
+  color: rgb(148, 148, 148);
+  margin: 5px;
+  font-size: 1.1rem;
+}
+.calc-item label {
+  color: #556052;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 0 20px 4px;
+}
+.input-container {
+  margin: 5px 0;
+}
+.input-info {
+  margin-left: 4px;
+  background-color: #eee;
+  border: 0.1px solid silver;
+  padding: 7.2px 10px;
+  line-height: 4;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: gray;
+}
+.input {
+  outline: none;
+  border: 0.5px solid silver;
+  padding: 7px;
+  width: 87%;
+  font-size: 1rem;
+  color: rgb(151, 151, 151);
+  transition: 0.3s linear;
+}
+.input:focus {
+  border: 1px solid rgba(7, 101, 209, 0.473);
+  box-shadow: 0px 0px 7px rgb(62, 159, 250);
+}
+.age {
+  width: 15px;
+  opacity: 0.5;
+}
+.gender-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px;
+}
+.gender-option {
+  border: 1.5px solid #646464;
+  border-radius: 4px;
+  flex: 1;
+  text-align: center;
+  line-height: 4.5vh;
+  height: 5vh;
+  margin-right: 0.5px;
+  position: relative;
+}
+.gender-name {
+  color: #646464 !important;
+  margin-right: 15px !important;
+}
+.gender-item:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.gender-item:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #1e4b00;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+.result {
+  border: 5px solid silver;
+  border-radius: 3px;
+  width: 85%;
+  margin-top: 20px;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+.result-place {
+  flex: 1;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 6rem;
+  color: rgb(148, 148, 148);
+}
+.result-button {
+  flex: 0.5;
+  background-color: #8fc0a9;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.select {
+  width: 99%;
+  margin: 40px 2px 0 4px;
+}

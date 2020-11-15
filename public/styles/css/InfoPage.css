@@ -1,0 +1,13 @@
+.page-content {
+  padding: 10rem;
+}
+.page-content h1 {
+  color: #556052;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+.page-content p {
+  color: #556052;
+  font-size: 1.2rem;
+  font-weight: 400;
+}

@@ -1,10 +1,81 @@
 /*here is the code responsple for the site to be responsive*/
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  .site-description {
+    font-size: 1.5rem;
+  }
+  .input {
+    width: 80%;
+  }
+  .full {
+    width: 98%;
+  }
+}
+@media (max-width: 880px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+  .site-description {
+    font-size: 1.5rem;
+  }
+  .status {
+    width: 80%;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .nv {
+    justify-content: flex-start;
+  }
+  .icon-div {
+    padding: 1rem 0 0 4rem;
+  }
+  .options {
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    background-color: #556052;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    clip-path: circle(100px at 110% -15%);
+    -webkit-clip-path: circle(100px at 110% -15%);
+    transition: all 0.7s ease-in-out;
+    pointer-events: none;
+  }
+  .options li a {
+    color: white;
+  }
+  .options.open {
+    clip-path: circle(1800px at 110% -15%);
+    -webkit-clip-path: circle(1800px at 110% -15%);
+    pointer-events: all;
+  }
+}
+
 @media (max-width: 779px) {
+  h1 {
+    font-size: 2rem;
+  }
   #meals {
     flex-direction: column;
     flex: 2.5;
     justify-content: center;
     align-items: center;
+  }
+  .calculator-container {
+    transition-delay: 0.5s;
   }
   .meal-container {
     width: 100%;
@@ -13,8 +84,87 @@
     flex: 2.5;
     padding: 0;
   }
+  .add-meal {
+    top: 0;
+  }
 
   .category-container {
     width: 100%;
+  }
+  .calculator {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  .calc-item-container {
+    width: 100%;
+  }
+  .gender-area {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .intro-pic {
+    display: none;
+  }
+
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .intro-containter {
+    padding: 5rem 0 0 1rem;
+  }
+}
+@media (max-width: 630px) {
+  .icon-div {
+    padding: 1rem 0 0 2rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  .heading-name {
+    line-height: 2rem;
+  }
+  .site-description {
+    font: 0.7rem;
+  }
+  .status {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .intro-containter {
+    padding: 1rem 0 0 1rem;
+  }
+  .status {
+    width: 98%;
+    font-size: 0.7rem;
+  }
+  .site-description {
+    font-size: 1rem;
+  }
+
+  .input-info {
+    padding-top: 0.6rem;
+  }
+}
+@media (max-height: 700px) {
+  .calc-item {
+    height: 50vh;
+  }
+  .info {
+    height: 90vh;
+  }
+  .result {
+    height: 30vh;
   }
 }
