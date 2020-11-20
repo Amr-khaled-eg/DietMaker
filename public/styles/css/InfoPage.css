@@ -5,9 +5,31 @@
   color: #556052;
   margin-bottom: 3rem;
   font-weight: 500;
+  animation: fade-in 1s ease;
 }
 .page-content p {
   color: #556052;
   font-size: 1.2rem;
   font-weight: 400;
+  animation: fade-in2 1s ease;
+}
+@keyframes fade-in {
+  from {
+    transform: translateX(-6rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+@keyframes fade-in2 {
+  from {
+    transform: translateX(6rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
 }

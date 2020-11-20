@@ -7,17 +7,27 @@
 }
 .goal-container {
   text-align: center;
+  padding-top: 3rem;
 }
 .goal {
   font-size: 3rem;
   color: #8db596;
   margin: 20px;
 }
+.your-goal {
+  color: #9ad3bc;
+}
+.calc-link {
+  font-size: 0.8rem;
+  color: #bce6eb;
+  text-decoration: none;
+}
 /*here are the meals styles and the items styles for the site */
 .workspace {
   display: flex;
   width: 100%;
   min-height: 100vh;
+  position: relative;
 }
 #meals {
   display: flex;
@@ -92,6 +102,7 @@
   justify-content: space-around;
   max-height: 4vh;
   font-size: 0.8rem;
+  cursor: grab;
 }
 .full {
   width: 48%;
@@ -178,4 +189,7 @@
 }
 .fade-in {
   animation: fadeOut 0.7s linear forwards;
+}
+.holding {
+  background-color: #12121281;
 }

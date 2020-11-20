@@ -9,7 +9,7 @@ function Category(props) {
       const delay = setTimeout(() => {
         console.log(searchTerm + " when i was called");
         props.search(searchTerm, props.name);
-      }, 3000);
+      }, 1000);
       return () => clearTimeout(delay);
     },
     [searchTerm]

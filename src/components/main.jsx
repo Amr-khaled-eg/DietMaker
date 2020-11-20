@@ -6,20 +6,13 @@ import Category from "./categorys/category";
 import Item from "./item";
 import uuid from "react-uuid";
 import Meal from "./meals/meal";
-// import { DndProvider } from "react-dnd";
-import MultiBackend, {
-  DndProvider,
-  TouchTransition,
-  Preview,
-} from "react-dnd-multi-backend";
-import HTML5toTouch from "react-dnd-multi-backend/dist/esm/HTML5toTouch";
+import { Link, withRouter } from "react-router-dom";
 
 async function getData(nameToSearch) {
   let url = `https://api.nal.usda.gov/fdc/v1/foods/search?query=${nameToSearch}&api_key=lgqdhxMVk21QtcCy3lA0BuSS39Wn3KRUwsa3m6i6&pageSize=5&dataType=Survey (FNDDS)`;
   let response = await fetch(url);
   let data = await response.json();
   let parsed_data = [];
-
   data.foods.forEach(function (element) {
     let item = {
       name: element.lowercaseDescription,
@@ -43,7 +36,7 @@ const defaultData = [
     ],
   },
 ];
-function Main() {
+function Main(props) {
   // this should be the array that has the data
   let [data, setData] = React.useState(defaultData);
   //i decided to use the props.chlidren to make things simpler in the site
@@ -126,8 +119,10 @@ function Main() {
       setData(defaultData);
       return;
     }
+
     console.log("called startSearching with " + name + " and " + catName);
     const parsed_data = await getData(name);
+    console.log(data);
     setData((prev) => {
       return prev.map((el) => {
         if (el.name === catName) {
@@ -215,73 +210,83 @@ function Main() {
       <Intro />
       <section class="deit-maker">
         <div class="goal-container">
-          <h1 class="goal">2000</h1>
+          <h2 className="your-goal"> your Goal:</h2>
+          <Link className="calc-link" to="/calculator">
+            Calculate now
+          </Link>
+          <h1 class="goal">
+            {" "}
+            {props.result} <span style={{ fontSize: "1rem" }}>cal</span>
+          </h1>
         </div>
         <div id="workspace-container">
           <div class="status">
             <table className="status-table">
-              <tr>
-                <th>Meals</th>
-                <th>protien</th>
-                <th>Carb</th>
-                <th>fat</th>
-                <th>cal</th>
-              </tr>
-              {status.map((el) => (
+              <thead>
                 <tr>
-                  <td>{el.name}</td>
-                  <td>{el.data.protien}</td>
-                  <td>{el.data.carb}</td>
-                  <td>{el.data.fat}</td>
-                  <td>{el.data.cal}</td>
+                  <th>Meals</th>
+                  <th>protien</th>
+                  <th>Carb</th>
+                  <th>fat</th>
+                  <th>cal</th>
                 </tr>
-              ))}
+              </thead>
+              <tbody>
+                {status.map((el) => (
+                  <tr>
+                    <td>{el.name}</td>
+                    <td>{el.data.protien}</td>
+                    <td>{el.data.carb}</td>
+                    <td>{el.data.fat}</td>
+                    <td>{el.data.cal}</td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
           </div>
-          <DndProvider options={HTML5toTouch}>
-            <section className="workspace">
-              <Categorys>
-                {data.map((el) => (
-                  <Category name={el.name} search={startSearching}>
-                    {el.content.map((element) => (
-                      <Item
-                        key={uuid()}
-                        id={uuid()}
-                        inMeal={false}
-                        name={element.name}
-                        info={element.info}
-                      />
-                    ))}
-                  </Category>
-                ))}
-              </Categorys>
-              <Meals addMeal={addMeal}>
-                {meals.map((el) => (
-                  <Meal
-                    name={el.name}
-                    add={addItem}
-                    remove={removeMeal}
-                    key={el.id}
-                    id={el.id}
-                  >
-                    {el.content.map((element) => (
-                      <Item
-                        key={element.id}
-                        id={element.id}
-                        inMeal={true}
-                        name={element.name}
-                        del={del}
-                        parent={el.name}
-                        info={element.info}
-                        amount={element.amount}
-                        update={updateAmount}
-                      ></Item>
-                    ))}
-                  </Meal>
-                ))}
-              </Meals>
-            </section>
-          </DndProvider>
+
+          <section className="workspace">
+            <Categorys>
+              {data.map((el) => (
+                <Category name={el.name} search={startSearching}>
+                  {el.content.map((element) => (
+                    <Item
+                      key={uuid()}
+                      id={uuid()}
+                      inMeal={false}
+                      name={element.name}
+                      info={element.info}
+                    />
+                  ))}
+                </Category>
+              ))}
+            </Categorys>
+            <Meals addMeal={addMeal}>
+              {meals.map((el) => (
+                <Meal
+                  name={el.name}
+                  add={addItem}
+                  remove={removeMeal}
+                  key={el.id}
+                  id={el.id}
+                >
+                  {el.content.map((element) => (
+                    <Item
+                      key={element.id}
+                      id={element.id}
+                      inMeal={true}
+                      name={element.name}
+                      del={del}
+                      parent={el.name}
+                      info={element.info}
+                      amount={element.amount}
+                      update={updateAmount}
+                    ></Item>
+                  ))}
+                </Meal>
+              ))}
+            </Meals>
+          </section>
         </div>
       </section>
     </div>

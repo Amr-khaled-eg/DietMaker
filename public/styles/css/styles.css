@@ -9,7 +9,8 @@ the general styles
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
+
   background-color: #f1f1f1;
 }
 h1 {
@@ -134,6 +135,33 @@ the intro style
   box-shadow: 0px 0px 50px rgb(133, 132, 132, 0.1), 0px 0px 20px #a6f6f1bd;
   object-fit: cover;
 }
+#pop-up {
+  text-align: center;
+  height: 10vh;
+  background-color: #556052;
+  color: white;
+  font-size: 1.5rem;
+  position: fixed;
+  padding: 3vh 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity 0.8s ease-in;
+}
+#pop-up.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.pop-btn {
+  display: inline-block;
+  padding: 0.2rem 2rem;
+  border: none;
+  font-size: 1rem;
+  color: #556052;
+  margin-left: 8px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

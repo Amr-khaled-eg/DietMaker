@@ -1,5 +1,12 @@
 /*here is the code responsple for the site to be responsive*/
-
+@media (min-width: 1280px) {
+  .result {
+    height: 30vh;
+  }
+  .info {
+    height: 90vh;
+  }
+}
 @media (max-width: 1100px) {
   h1 {
     font-size: 2.4rem;
@@ -62,6 +69,13 @@
     -webkit-clip-path: circle(1800px at 110% -15%);
     pointer-events: all;
   }
+  .page-content h1,
+  .page-content p {
+    animation: none !important;
+  }
+  .calculator {
+    width: 95%;
+  }
 }
 
 @media (max-width: 779px) {
@@ -94,13 +108,21 @@
   .calculator {
     flex-direction: column;
     align-items: center;
-    width: 95%;
   }
   .calc-item-container {
     width: 100%;
   }
   .gender-area {
     padding: 10px 10px;
+  }
+  #pop-up {
+    font-size: 0.9rem;
+  }
+  .pop-btn {
+    padding: 0 1rem;
+  }
+  .page-content {
+    padding: 10rem 2rem !important;
   }
 }
 @media (max-width: 700px) {
@@ -119,6 +141,12 @@
   .intro-containter {
     padding: 5rem 0 0 1rem;
   }
+  .calc-item {
+    height: 40vh;
+  }
+  .info {
+    height: 80vh;
+  }
 }
 @media (max-width: 630px) {
   .icon-div {
@@ -136,6 +164,10 @@
   .status {
     width: 90%;
     font-size: 1rem;
+  }
+
+  .page-content p {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 500px) {

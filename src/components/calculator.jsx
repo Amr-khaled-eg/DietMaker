@@ -1,6 +1,4 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Input(props) {
   return (
@@ -18,13 +16,14 @@ function Input(props) {
     </div>
   );
 }
-function Calcualtor() {
+function Calcualtor(props) {
   const [info, setInfo] = React.useState({
     wieght: 67,
     height: 180,
     age: 22,
     activity: 1.2,
-    male: false,
+    goal: 1,
+    male: true,
     female: false,
   });
   const [result, setResult] = React.useState(0);
@@ -51,31 +50,30 @@ function Calcualtor() {
       }
     });
     if (info.male) {
-      let res = 66 + 13.7 * info.wieght + 5 * info.height - 6.8 * info.age;
-
+      // let res = 66 + 13.7 * info.wieght + 5 * info.height - 6.8 * info.age;
+      let res = 10 * info.wieght + 6.25 * info.height - 5 * info.age + 5;
       return res;
     }
     if (info.female) {
-      let res = 655 + 9.6 * info.wieght + 1.8 * info.height - 4.7 * info.age;
+      // let res = 655 + 9.6 * info.wieght + 1.8 * info.height - 4.7 * info.age;
+      let res = 10 * info.wieght + 6.25 * info.height - 5 * info.age - 161;
 
       return res;
     }
   }
   function calculate() {
     let bmr = BMR();
-    console.log(bmr);
-    console.log(info);
     if (bmr == null) {
-      setResult("fill the form");
+      props.set("fill the form");
     } else {
-      setResult(Math.round(bmr * info.activity));
+      let res = Math.round(bmr * info.activity * info.goal);
+      setResult(res);
+      props.set(res);
     }
   }
-  React.useEffect(() => {
-    AOS.init({ duration: 800 });
-  });
+
   return (
-    <section className="calculator-container" data-aos="fade-in">
+    <section className="calculator-container">
       <div className="calculator">
         <div className="calc-item-container">
           <fieldset className="calc-item info">
@@ -117,6 +115,7 @@ function Calcualtor() {
               <div className="gender-option">
                 <label className="gender-name">Male</label>
                 <input
+                  checked={info.male ? true : false}
                   type="radio"
                   value="male"
                   name="gender"
@@ -127,6 +126,7 @@ function Calcualtor() {
               <div className="gender-option">
                 <label className="gender-name">Female</label>
                 <input
+                  checked={info.female ? true : false}
                   type="radio"
                   name="gender"
                   value="female"
@@ -146,6 +146,7 @@ function Calcualtor() {
               eligendi harum in? Repudiandae, provident minus? Dolore porro ab
               quidem illo?
             </p>
+            <label className="label-inline">Activity:</label>
             <select
               name="activity"
               className="input select"
@@ -165,9 +166,32 @@ function Calcualtor() {
 
           <fieldset className="calc-item">
             <legend>Your info</legend>
+            <p className="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              eligendi harum in? Repudiandae, provident minus? Dolore porro ab
+              quidem illo?
+            </p>
+            <label className="label-inline">Goal:</label>
+            <select
+              className="input select"
+              name="goal"
+              onChange={changeHandler}
+            >
+              <option value={0.59}>Extreme weight loss</option>
+              <option value={0.79}>Weight loss</option>
+              <option value={0.9}>Mild weight loss</option>
+              <option value={1} selected>
+                Maintain weight
+              </option>
+              <option value={1.1}>Mild weight gain</option>
+              <option value={1.21}>Weight gain</option>
+              <option value={1.41}>Fast Weight gain</option>
+            </select>
           </fieldset>
           <div className="result">
-            <div className="result-place">{result}</div>
+            <div className="result-place">
+              {result} <span style={{ fontSize: "1rem" }}>cal</span>
+            </div>
             <button className="result-button" onClick={calculate}>
               Calculate
             </button>
