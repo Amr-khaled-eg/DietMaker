@@ -9,7 +9,7 @@ import Meal from "./meals/meal";
 import { Link, withRouter } from "react-router-dom";
 
 async function getData(nameToSearch) {
-  let url = `https://api.nal.usda.gov/fdc/v1/foods/search?query=${nameToSearch}&api_key=lgqdhxMVk21QtcCy3lA0BuSS39Wn3KRUwsa3m6i6&pageSize=5&dataType=Survey (FNDDS)`;
+  let url = `https://api.nal.usda.gov/fdc/v1/foods/search?query=${nameToSearch}&api_key=lgqdhxMVk21QtcCy3lA0BuSS39Wn3KRUwsa3m6i6&pageSize=10&dataType=Survey (FNDDS)`;
   let response = await fetch(url);
   let data = await response.json();
   let parsed_data = [];
@@ -27,18 +27,13 @@ async function getData(nameToSearch) {
   });
   return parsed_data;
 }
-const defaultData = [
-  {
-    name: "food",
-    content: [
-      { name: "banana", info: { cal: 1, fat: 1, carb: 1, protein: 1 } },
-      { name: "apple", info: { cal: 1, fat: 1, carb: 1, protein: 1 } },
-    ],
-  },
-];
+
 function Main(props) {
   // this should be the array that has the data
-  let [data, setData] = React.useState(defaultData);
+  let [data, setData] = React.useState({
+    name: "food",
+    content: [],
+  });
   //i decided to use the props.chlidren to make things simpler in the site
   //so here the categorys component will have inside of it some of the category component
   //and the catagory will have the item component
@@ -116,7 +111,7 @@ function Main(props) {
   }
   async function startSearching(name, catName) {
     if (name === "") {
-      setData(defaultData);
+      setData(data);
       return;
     }
 
@@ -124,13 +119,7 @@ function Main(props) {
     const parsed_data = await getData(name);
     console.log(data);
     setData((prev) => {
-      return prev.map((el) => {
-        if (el.name === catName) {
-          return { ...el, content: parsed_data };
-        } else {
-          return el;
-        }
-      });
+      return { name: "food", content: parsed_data };
     });
   }
   function setCookie(cname, cvalue, exdays) {
@@ -155,17 +144,6 @@ function Main(props) {
     return "";
   }
 
-  function checkCookie() {
-    var user = getCookie("username");
-    if (user != "") {
-      alert("Welcome again " + user);
-    } else {
-      user = prompt("Please enter your name:", "");
-      if (user != "" && user != null) {
-        setCookie("username", user, 365);
-      }
-    }
-  }
   React.useEffect(() => {
     let total = {
       name: "total",
@@ -247,19 +225,22 @@ function Main(props) {
 
           <section className="workspace">
             <Categorys>
-              {data.map((el) => (
-                <Category name={el.name} search={startSearching}>
-                  {el.content.map((element) => (
-                    <Item
-                      key={uuid()}
-                      id={uuid()}
-                      inMeal={false}
-                      name={element.name}
-                      info={element.info}
-                    />
-                  ))}
-                </Category>
-              ))}
+              <Category name={data.name} search={startSearching}>
+                {data.content.length === 0 ? (
+                  <h2 className="placeholder">
+                    start typing to get the food you want
+                  </h2>
+                ) : null}
+                {data.content.map((element) => (
+                  <Item
+                    key={uuid()}
+                    id={uuid()}
+                    inMeal={false}
+                    name={element.name}
+                    info={element.info}
+                  />
+                ))}
+              </Category>
             </Categorys>
             <Meals addMeal={addMeal}>
               {meals.map((el) => (

@@ -142,7 +142,7 @@ the intro style
   color: white;
   font-size: 1.5rem;
   position: fixed;
-  padding: 3vh 0;
+  padding: 2rem 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -154,12 +154,14 @@ the intro style
   pointer-events: none;
 }
 .pop-btn {
-  display: inline-block;
+  display: inline;
   padding: 0.2rem 2rem;
   border: none;
   font-size: 1rem;
   color: #556052;
   margin-left: 8px;
+  outline: none;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar {

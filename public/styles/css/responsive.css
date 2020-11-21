@@ -1,5 +1,5 @@
 /*here is the code responsple for the site to be responsive*/
-@media (min-width: 1280px) {
+@media (min-width: 1300px) {
   .result {
     height: 30vh;
   }
@@ -56,8 +56,8 @@
     width: 100%;
     z-index: 1;
     color: white;
-    clip-path: circle(100px at 110% -15%);
-    -webkit-clip-path: circle(100px at 110% -15%);
+    clip-path: circle(100px at 110% -25%);
+    -webkit-clip-path: circle(100px at 110% -25%);
     transition: all 0.7s ease-in-out;
     pointer-events: none;
   }
@@ -65,8 +65,8 @@
     color: white;
   }
   .options.open {
-    clip-path: circle(1800px at 110% -15%);
-    -webkit-clip-path: circle(1800px at 110% -15%);
+    clip-path: circle(1800px at 110% -25%);
+    -webkit-clip-path: circle(1800px at 110% -25%);
     pointer-events: all;
   }
   .page-content h1,
@@ -189,7 +189,7 @@
     padding-top: 0.6rem;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 850px) {
   .calc-item {
     height: 50vh;
   }
@@ -198,5 +198,59 @@
   }
   .result {
     height: 30vh;
+  }
+}
+@media (max-height: 600px) {
+  .calc-item {
+    height: 60vh;
+  }
+  .info {
+    height: 110vh;
+  }
+  .intro-containter {
+    padding: 4rem 0 0 4rem;
+  }
+}
+@media (max-height: 500px) {
+  .calc-item {
+    height: 65vh;
+  }
+  .info {
+    height: 140vh;
+  }
+  .result {
+    height: 40vh;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .meal-container {
+    height: 768px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .meal-container {
+    height: 1024px;
+  }
+}
+/* iphone5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  .meal-container {
+    height: 320px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .meal-container {
+    height: 568px;
+  }
+}
+/* iPhone 4 */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .meal-container {
+    height: 320px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .meal-container {
+    height: 480px;
   }
 }

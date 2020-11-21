@@ -88,6 +88,12 @@
   color: #8db596;
   font-weight: 400;
 }
+.placeholder {
+  color: rgb(197, 197, 197);
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
 .item {
   width: 90%;
   background-color: #8db596;
